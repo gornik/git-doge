@@ -9,7 +9,7 @@ git filter-branch -f --msg-filter 'awk "
         return match(word, \"^[A-Z]\");
     }
 
-    function print_array(a,    i, n) {
+    function print_array(a, i, n) {
         n = length(a);
         for (i = 0; i <= n; i++) {
             if (i == n) {
